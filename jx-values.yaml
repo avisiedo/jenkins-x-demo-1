@@ -26,6 +26,8 @@ jxRequirements:
         enabled: false
         production: false
     key: dev
+    owner: avisiedo
+    repository: jenkins-x-demo-1
   - ingress:
       domain: ""
       externalDNS: false
@@ -54,6 +56,8 @@ jxRequirements:
       enabled: false
       production: false
   kaniko: true
+  pipelineUser:
+    username: avisiedo
   repository: bucketrepo
   secretStorage: local
   storage:

@@ -9,7 +9,6 @@ buildPacks:
 cluster:
   chartRepository: http://bucketrepo.jx/bucketrepo/charts
   clusterName: kind
-  environmentGitOwner: ""
   gitKind: github
   gitName: github
   gitServer: https://github.com
@@ -26,6 +25,8 @@ environments:
       enabled: false
       production: false
   key: dev
+  owner: avisiedo
+  repository: jenkins-x-demo-1
 - ingress:
     domain: ""
     externalDNS: false
@@ -54,6 +55,8 @@ ingress:
     enabled: false
     production: false
 kaniko: true
+pipelineUser:
+  username: avisiedo
 repository: bucketrepo
 secretStorage: local
 storage:
