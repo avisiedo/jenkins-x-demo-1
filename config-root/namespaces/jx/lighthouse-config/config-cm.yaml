@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         avisiedo/jenkins-x-demo-1: true
+        avisiedo/jx3-quickstart-demo1: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         avisiedo/jenkins-x-demo-1: merge
+        avisiedo/jx3-quickstart-demo1: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - avisiedo/jenkins-x-demo-1
+        - avisiedo/jx3-quickstart-demo1
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - avisiedo/jenkins-x-demo-1
+        - avisiedo/jx3-quickstart-demo1
       target_url: http://dashboard-jx.apps-crc.testing
 kind: ConfigMap
 metadata:
