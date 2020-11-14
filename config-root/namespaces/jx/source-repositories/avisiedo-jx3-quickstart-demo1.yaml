@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: avisiedo
+    provider: github
+    repository: jx3-quickstart-demo1
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: avisiedo-jx3-quickstart-demo1
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/avisiedo/jx3-quickstart-demo1.git
+  org: avisiedo
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx3-quickstart-demo1
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/avisiedo/jx3-quickstart-demo1
